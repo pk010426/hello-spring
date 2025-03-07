@@ -1,10 +1,13 @@
 package hello.hello_spring.repository;
 
 import hello.hello_spring.domain.Member;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
+@RequiredArgsConstructor
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();
