@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class JpaMemberRepositoryTest {
 
     @Autowired
-    private JpaMemberRepository repository;  // @Autowired로 변경
+    private MemberRepository repository;  // @Autowired로 변경
 
     @Test
     @Order(1)  // 실행 순서를 명확하게 지정할 수 있음
